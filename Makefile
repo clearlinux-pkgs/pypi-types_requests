@@ -1,5 +1,5 @@
 PKG_NAME := pypi-types_requests
-URL = https://files.pythonhosted.org/packages/d6/cc/6ac23c08d94c8e22ef367b95d64c1f5d1ecc704089abb5d5204d24024dff/types-requests-2.29.0.0.tar.gz
+URL = https://files.pythonhosted.org/packages/3b/a7/7d6dab83a48eff91ff75e21b2aaefd7419a29d5b1b1b8025d4a78ade0017/types-requests-2.30.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
