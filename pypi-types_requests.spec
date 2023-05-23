@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-types_requests
-Version  : 2.30.0.0
-Release  : 61
-URL      : https://files.pythonhosted.org/packages/3b/a7/7d6dab83a48eff91ff75e21b2aaefd7419a29d5b1b1b8025d4a78ade0017/types-requests-2.30.0.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/3b/a7/7d6dab83a48eff91ff75e21b2aaefd7419a29d5b1b1b8025d4a78ade0017/types-requests-2.30.0.0.tar.gz
+Version  : 2.31.0.0
+Release  : 62
+URL      : https://files.pythonhosted.org/packages/95/77/b036fc5823e1b69f070f7c7815aee15dd69f4fc11dcebd08f5c7493464d1/types-requests-2.31.0.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/95/77/b036fc5823e1b69f070f7c7815aee15dd69f4fc11dcebd08f5c7493464d1/types-requests-2.31.0.0.tar.gz
 Summary  : Typing stubs for requests
 Group    : Development/Tools
 License  : Apache-2.0
@@ -43,10 +43,10 @@ python3 components for the pypi-types_requests package.
 
 
 %prep
-%setup -q -n types-requests-2.30.0.0
-cd %{_builddir}/types-requests-2.30.0.0
+%setup -q -n types-requests-2.31.0.0
+cd %{_builddir}/types-requests-2.31.0.0
 pushd ..
-cp -a types-requests-2.30.0.0 buildavx2
+cp -a types-requests-2.31.0.0 buildavx2
 popd
 
 %build
@@ -54,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684612478
+export SOURCE_DATE_EPOCH=1684870152
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
