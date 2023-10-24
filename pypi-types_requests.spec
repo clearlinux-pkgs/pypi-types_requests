@@ -6,17 +6,17 @@
 # autospec commit: 88d85d9
 #
 Name     : pypi-types_requests
-Version  : 2.31.0.10
-Release  : 73
-URL      : https://files.pythonhosted.org/packages/0d/a0/578870e05da99902bf6b75bc37f845cc359bb0278eb0d926c6f3f10bb869/types-requests-2.31.0.10.tar.gz
-Source0  : https://files.pythonhosted.org/packages/0d/a0/578870e05da99902bf6b75bc37f845cc359bb0278eb0d926c6f3f10bb869/types-requests-2.31.0.10.tar.gz
+Version  : 2.30.0.0
+Release  : 74
+URL      : https://files.pythonhosted.org/packages/3b/a7/7d6dab83a48eff91ff75e21b2aaefd7419a29d5b1b1b8025d4a78ade0017/types-requests-2.30.0.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/3b/a7/7d6dab83a48eff91ff75e21b2aaefd7419a29d5b1b1b8025d4a78ade0017/types-requests-2.30.0.0.tar.gz
 Summary  : Typing stubs for requests
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: pypi-types_requests-python = %{version}-%{release}
 Requires: pypi-types_requests-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pypi(urllib3)
+BuildRequires : pypi(types_urllib3)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -38,6 +38,7 @@ Summary: python3 components for the pypi-types_requests package.
 Group: Default
 Requires: python3-core
 Provides: pypi(types_requests)
+Requires: pypi(types_urllib3)
 Requires: pypi(urllib3)
 
 %description python3
@@ -45,10 +46,10 @@ python3 components for the pypi-types_requests package.
 
 
 %prep
-%setup -q -n types-requests-2.31.0.10
-cd %{_builddir}/types-requests-2.31.0.10
+%setup -q -n types-requests-2.30.0.0
+cd %{_builddir}/types-requests-2.30.0.0
 pushd ..
-cp -a types-requests-2.31.0.10 buildavx2
+cp -a types-requests-2.30.0.0 buildavx2
 popd
 
 %build
@@ -56,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1698188022
+export SOURCE_DATE_EPOCH=1698189882
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
