@@ -7,7 +7,7 @@
 #
 Name     : pypi-types_requests
 Version  : 2.30.0.0
-Release  : 77
+Release  : 78
 URL      : https://files.pythonhosted.org/packages/3b/a7/7d6dab83a48eff91ff75e21b2aaefd7419a29d5b1b1b8025d4a78ade0017/types-requests-2.30.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3b/a7/7d6dab83a48eff91ff75e21b2aaefd7419a29d5b1b1b8025d4a78ade0017/types-requests-2.30.0.0.tar.gz
 Summary  : Typing stubs for requests
