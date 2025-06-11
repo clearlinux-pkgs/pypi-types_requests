@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : pypi-types_requests
-Version  : 2.32.0.20250602
-Release  : 85
-URL      : https://files.pythonhosted.org/packages/48/b0/5321e6eeba5d59e4347fcf9bf06a5052f085c3aa0f4876230566d6a4dc97/types_requests-2.32.0.20250602.tar.gz
-Source0  : https://files.pythonhosted.org/packages/48/b0/5321e6eeba5d59e4347fcf9bf06a5052f085c3aa0f4876230566d6a4dc97/types_requests-2.32.0.20250602.tar.gz
+Version  : 2.32.4.20250611
+Release  : 86
+URL      : https://files.pythonhosted.org/packages/6d/7f/73b3a04a53b0fd2a911d4ec517940ecd6600630b559e4505cc7b68beb5a0/types_requests-2.32.4.20250611.tar.gz
+Source0  : https://files.pythonhosted.org/packages/6d/7f/73b3a04a53b0fd2a911d4ec517940ecd6600630b559e4505cc7b68beb5a0/types_requests-2.32.4.20250611.tar.gz
 Summary  : Typing stubs for requests
 Group    : Development/Tools
 License  : Apache-2.0
@@ -33,7 +33,7 @@ It can be used by type-checking tools like
 [Pyre](https://pyre-check.org/),
 PyCharm, etc. to check code that uses `requests`. This version of
 `types-requests` aims to provide accurate annotations for
-`requests==2.32.*`.
+`requests~=2.32.4`.
 
 %package license
 Summary: license components for the pypi-types_requests package.
@@ -64,10 +64,10 @@ python3 components for the pypi-types_requests package.
 
 
 %prep
-%setup -q -n types_requests-2.32.0.20250602
-cd %{_builddir}/types_requests-2.32.0.20250602
+%setup -q -n types_requests-2.32.4.20250611
+cd %{_builddir}/types_requests-2.32.4.20250611
 pushd ..
-cp -a types_requests-2.32.0.20250602 buildavx2
+cp -a types_requests-2.32.4.20250611 buildavx2
 popd
 
 %build
@@ -75,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1748877151
+export SOURCE_DATE_EPOCH=1749653233
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
